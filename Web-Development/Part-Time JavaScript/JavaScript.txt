@@ -1,0 +1,6 @@
+* JavaScript output:
+1/ Writing into HTML element, using innerHtml
+2/ Writing into an HTML output using document.write().
+3/ Writing into an alert box, using window.alert().
+----------
+Client Side vs Server Side

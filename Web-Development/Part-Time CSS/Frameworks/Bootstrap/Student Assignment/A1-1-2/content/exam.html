@@ -1,0 +1,75 @@
+<!DOCTYPE html>	
+<html>
+    <head>
+        <title>Add JavaScript To Web Page </title>
+       <script >
+           //alert("External JavaScript");
+window.onload=function(){
+        var total=0;
+        var i_1=0;
+        var qty_old=0;
+        var amount_old1=0;
+        document.getElementById("btn-Cal1").onclick=function(){
+            var price1=document.getElementById("span1").innerText;
+            var qty1=document.getElementById("num1").value;
+        }
+        if(Number(qty1)==qty_old){
+            return;
+        }
+        else{
+            if(i_1==0){
+                total=total+Number(price1)* Number(qty1);
+                document.getElementById("spantol").innerText="Total:"+"$"+total+".00";
+                qty_old=Number(qty1);
+                amount_old1=Number(qty1)* Number(price1);
+                i_1=1;
+            }
+        
+        else{
+                total=total+Number(qty1)*Number(price1);
+                total=total-amount_old1;
+                qty_old=Number(qty1);
+                amount_old1=Number(qty)*Number(price1);
+                document.getElementById("spantol").innerText="Total: "+"$"+total+".00";
+        }
+}
+}
+
+
+       </script>
+    </head>
+    <body>
+        
+       <form style="text-align: center;">
+        <h1> Daily Salary</h1>
+        <div> 
+            <img src="../image/7jpg.jpg" width="100px" height="100px" alt="image">
+            <span id="span1">$3.00</span>
+            <input type="number" id="num1" min=0 value="1">
+            <button type="button" id="btn-Cal1">Calculate</button>
+        </div>
+       
+        <div> <img src="../image/7jpg.jpg" width="50px" height="30px" alt="image">
+            <span id="span2">$3.00</span>
+            <input type="number" id="num2" min=0 value="1">
+            <button type="button" id="btn-Cal2">Calculate</button>
+        </div>
+
+        <div> <img src="../image/7jpg.jpg" width="100px" height="100px" alt="image">
+            <span id="span3">$3.00</span>
+            <input type="number" id="num3" min=0 value="1">
+            <button type="button" id="btn-Cal3">Calculate</button>
+            
+        </div>
+        <span id="spantol">Total:$0.00</span>
+       </form> 
+
+       <table id="tb">
+            <tr class="bg"><th>ID</th> <th>Name</th></tr>
+            <tr>
+                <td>001</td>
+                <td>Kaka</td>
+            </tr>
+       </table>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    background-color:#66c2ff;
+}
+p{
+    font-size: 20px;  
+    color:black;
+    font-family: "Khmer OS";
+}
+h2{
+    position: absolute;
+    left: 540px;
+    bottom: 330px;
+    color: dodgerblue;
+
+}
+h1{
+    font-family: "Khmer OS Muol Light";
+}
+li{
+    font-family: "Khmer OS Freehand";
+    font-size: 25px;
+}
+.city5{
+    position: absolute;
+    left: 390px;
+    bottom: 350px;
+    
+}
+img:hover{
+    opacity: 0.8;
+}
+h4{
+    position: absolute;
+    margin: 100px;     
+}
+
+  
+
+

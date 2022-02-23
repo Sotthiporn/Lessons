@@ -1,0 +1,3 @@
+Web Service:
+	1/ SOAP (XML) Microsoft--> Security
+	2/ RESTFUL (XML, JSON, Plant Text, etc....)

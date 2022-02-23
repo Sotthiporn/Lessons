@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/header.ejs') %>
+</head>
+<body>
+    <%- include('partials/menu.ejs') %>
+
+    <h1>Contact Us!</h1>
+    <p>Contact the collest cats on the web right here</p>
+    
+    <form action="/contact" method="POST">
+        <label for="who">Who do you want to contact?</label>
+        <input type="text" name="who" value="<%= qs.who %>">
+        <label for="department">Which department</label>
+        <input type="text" name="department" value="<%= qs.department %>">
+        <label for="email">Your email</label>
+        <input type="text" name="email" value="<%= qs.email %>">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

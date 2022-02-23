@@ -1,0 +1,24 @@
+==>"write less, do more"
+---
+The jQuery library contains the following features:
+1/ HTML DOM (Document Object Model) manipulation
+2/ CSS manipulation
+3/ HTML event methods
+4/ Effects and animations
+5/ AJAX
+6/ Utility functions
+----
+Basic syntax is: $(selector).action()
+
+1/ "$" sign to define/access jQuery
+2/ (selector) to use HTML elements
+3/ jQuery action() to be performed on the element(s)
+---
+Example:
+	$(this).hide() - hides the current element.
+
+	$("p").hide() - hides all <p> elements.
+
+	$(".test").hide() - hides all elements with class="test".
+
+	$("#test").hide() - hides the element with id="test".

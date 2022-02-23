@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").css("background-color", "yellow");
+	$("h1").css("text-align","center");
+	$("h2").css({"text-align":"center","font-size":"300%"});
+  });
+});
+</script>
+</head>
+<body>
+
+<h1>Hello h1</h1>
+
+<p>This is a p.</p>
+<p>This is another p.</p>
+
+<h2>Hello h2 </h2>
+
+<button id="btn1">Add CSS Style</button>
+
+</body>
+</html>

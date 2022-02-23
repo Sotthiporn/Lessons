@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Chrome",
+            "type": "process",
+            "command": "chorme.exe",
+            "windows": {"command": "C:/Program Files/Google/Chrome/Application/Chrome.exe"},
+            "args": ["${file}"],
+            "problemMatcher": []
+        }
+    ]
+}

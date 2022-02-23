@@ -1,0 +1,19 @@
+<!DOCTYPE html>	
+<html>
+    <head>
+        <title>Add JavaScript To Web Page </title>
+        
+        <script>
+            var nums=["1.jpg","2.jpg","3.jpg","4.jpg"];
+            var i=1;
+            function dc(){
+                document.getElementById("demo").src=nums[i++];
+                if(i==4) i=0;
+            }
+            setInterval(dc,5000);
+        </script>
+    </head>
+    <body>
+       <img src="../image/2.jpg" id="demo">
+    </body>
+</html>

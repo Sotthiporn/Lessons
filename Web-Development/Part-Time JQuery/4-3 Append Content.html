@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		$("p").append(" <b>Append text</b>.");
+	});
+		$("#btn2").click(function(){
+		$("ol").append(" <li>Append text</li>");
+	});
+});
+</script>
+</head>
+<body>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<ol>
+	<li>List Item 1</li>
+	<li>List Item 2</li>
+	<li>List Item 3</li>
+</ol>
+<button id="btn1">Append text</button>
+<button id="btn2">Append list items</button>
+</body>
+</html>

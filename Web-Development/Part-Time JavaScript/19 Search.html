@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My Search </title>
+</head>
+<body>
+<script>
+function search(brand) {
+	var folder="./Pages/";
+	var Path= folder.concat(brand,".html");
+	var ifr = document.getElementById('display');
+	ifr.src = Path;
+}
+</script>
+<h1> Search to iFrame</h1>
+Brand:<input type="text" id="txtBrand"/>
+<button type="button" onclick="search(document.getElementById('txtBrand').value)"> Search 
+</button>
+<iframe id="display" width="100%" height="80%"></iframe>
+</body>
+</html>

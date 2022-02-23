@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<select id="mySelect" onchange="myCombo()">
+	<option></option>
+	<option>Fruit</option>
+	<option>Subject</option>
+</select>
+<select id="mycbo">
+</select>
+<script>
+function myCombo() {
+	var x = document.getElementById("mySelect").selectedIndex;
+	if (x==1) 
+	{
+		document.getElementById("mycbo").innerHTML="<option>Apple</option>";
+	}
+	else if (x==2) 
+	{
+		document.getElementById("mycbo").innerHTML="<option>JavaScript</option>";
+	}
+	else
+	{
+		document.getElementById("mycbo").innerHTML="<option></option>";
+	}
+}
+</script>
+</body>
+</html>

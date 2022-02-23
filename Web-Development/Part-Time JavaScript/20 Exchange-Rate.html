@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exchange Rate</title>
+</head>
+<body>
+	<h1>Exchange Rate Khmer To Dollar</h1>
+	<label>Amount</label>
+	<input type="text" id="txt-amt">
+	<label>Rate</label>
+	<input type="text" id="txt-rate">
+	<label>Total</label>
+	<input type="text" id="txt-total">
+	<button type="button" id="btn-save" onClick="Exchange()">Calculate</button>
+	<h1 id="demo"> </h1>
+<script>	
+function Exchange() {
+	var amount=document.getElementById('txt-amt').value;
+	var rate=document.getElementById('txt-rate').value;
+	var riel=amounts/rate;
+	document.getElementById('txt-total').value = riel + "$";
+}
+</script>
+</body>
+</html>

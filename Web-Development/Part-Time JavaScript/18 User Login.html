@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SunEd I.T Training Center</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body> 
+			
+		<h2> User Login </h2>
+		User Name:<input type="Textbox"  id="txtUN">
+		Password:<input type="Password" id="txtPwd"><br>
+		<input type="submit" value="Submit" onclick="ShowForm()">
+		<p id="hi"></p>
+<script>
+function ShowForm() {
+	var UN = document.getElementById("txtUN").value;
+	var PWD =  document.getElementById("txtPwd").value;
+	document.getElementById("hi").innerHTML = UN + PWD;
+}
+</script>
+</body>
+</html>

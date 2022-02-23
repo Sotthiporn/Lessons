@@ -1,0 +1,64 @@
+
+.vertical{
+    list-style-type: none;
+    width: 555px;
+    margin: 32px auto  0 auto;
+    
+}
+.vertical li{
+    text-align: center;
+    
+}
+.vertical a{
+    line-height: 48px;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+.vertical a:hover{
+    color: black;
+}
+.horizontal{
+    width: 555px; margin: 0 auto; 
+    border-radius: 16px;
+    background-color: dodgerblue;
+    border:2px solid black;
+}
+.horizontal li {
+    display: inline-block;
+    width: 107px;
+    text-align: center;   
+}
+.horizontal a{
+    color: white;
+    line-height: 32px; 
+    font-size: 20px;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+.horizontal a:hover{
+    color: brown;
+}
+.horizontal a:active{
+    color: blue;
+}
+
+table{margin: 16px auto;border-collapse: collapse;}
+/* Group Selector*/ 
+table,table th,table td{
+    border:2px solid black;
+}
+table tr:hover{
+    background-color: black;color: white;
+}
+table tr:nth-child(odd)
+{
+    background-color: gray;
+}
+table tr:nth-child(even)
+{
+    background-color: black;
+}
+
+
+/* Add CSS To Web page photo album.html*/

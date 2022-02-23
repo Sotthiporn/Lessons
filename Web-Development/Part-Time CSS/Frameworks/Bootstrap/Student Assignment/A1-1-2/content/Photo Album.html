@@ -1,0 +1,61 @@
+<!DOCTYPE html>	
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="../style\myStyle1.css"/>
+            <link rel="stylesheet" type="text/css" href="../style\myStyle.css"/>
+    </head>
+    <body>
+            <ul class="horizontal">
+                    <li><a href="../content/Introduction to Internet.html">First</a></li>
+                    <li><a href="../content/Introduction to Internet.html">Next</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../content/list.html">Previous</a></li>
+                    <li><a href="../content/Photo Album.html">Last</a></li>
+            </ul>
+        <div class="container"> 
+            <div id="big">
+                    <img src="../image/ព្រះបរមរាជវាំង.jpg" alt="ព្រះបរមរាជវាំង">
+            </div>
+            <div id="sub">
+                <div><p id="text" class="top-left">ព្រះបរមរាជវាំង</p></div>
+                <img src="../image/ព្រះបរមរាជវាំង.jpg" alt="ព្រះបរមរាជវាំង" >      
+                <img  src="../image/វិមានឯករាជ្យ.jpg" alt="វិមានឯករាជ្យ">
+                <img  src="../image/ផ្សារថ្មី.jpg" alt="ផ្សារថ្មី">
+                <img  src="../image/សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ">
+                <img  src="../image/សារៈមន្ទីជាតិ.jpg" alt="សារៈមន្ទីជាតិ"> 
+            </div>
+        </div>
+        
+        <script> 
+            var bigImg = document.getElementById("big");
+            var subImg = document.getElementById("sub").getElementsByTagName("img");
+		    for (var i = 0; i< subImg.length; i++)
+	    	{
+                subImg[i].addEventListener('click',fullimage);
+                        subImg[0].onclick=function(){
+                        text.innerHTML="ព្រះបរមរាជវាំង";
+                        text.style.color="white";
+                        }
+                        subImg[1].onclick=function(){
+                        text.innerHTML="វិមានឯករាជ្យ";text.style.color="white";  
+                     }
+                        subImg[2].onclick=function(){
+                        text.innerHTML="ផ្សារថ្មី";text.style.color="green";
+                        }
+                        subImg[3].onclick=function(){
+                            text.innerHTML="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ"; text.style.color="dodgerblue";
+                        }
+                        subImg[4].onclick=function(){
+                        text.innerHTML="សារៈមន្ទីជាតិ"; text.style.color="blue";
+                        }
+            }
+             function fullimage()
+		    {         
+                var imgSrc =this.getAttribute('src');
+                bigImg.innerHTML = "<img src= "+imgSrc+">"; 
+		    }
+            
+           
+        </script>
+    </body>
+</html>

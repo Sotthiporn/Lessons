@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All Dynamic</title>
+        <style>
+            #title{
+                position: absolute; margin: 4px;
+            }
+            #photo{
+                width: 500px;
+                height: 300px;
+                border: 2px solid white;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <span id="title">Internet</span>
+        <img id="photo" src="../image/Internet.jpg">
+        <script>
+           /*
+            var title=document.getElementById("title");
+            var photo=document.getElementById("photo");
+           
+            function changetointranet (){
+                title.innerHTML="Internet";
+                photo.src="../image/Internet.jpg";
+                title.style.borderColor="blue";
+                title.style.color="white";
+            }
+            function changetointernet(){
+                title.innerHTML="Intranet";
+                photo.src="../image/Extranet.jpg";
+                title.style.borderColor="white";
+                title.style.color="dodgerblue";
+            }
+            photo.onmouseover=changetointernet;
+            photo.onmouseout=changetointranet;    
+            */
+            var title=document.getElementById("title");
+            var photo=document.getElementById("photo");
+
+            photo.onmouseout=function(){
+                title.innerHTML="Intranet";
+                photo.src="../image/Extranet.jpg";
+                title.style.borderColor="white";
+                title.style.color="dodgerblue";
+            }
+            photo.onmouseover=function(){
+                title.innerHTML="Internet";
+                photo.src="../image/Internet.jpg";
+                title.style.borderColor="blue";
+                title.style.color="white";
+            }
+        </script>
+    </body>
+</html>

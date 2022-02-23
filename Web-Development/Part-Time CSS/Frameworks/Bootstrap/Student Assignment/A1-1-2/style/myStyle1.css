@@ -1,0 +1,23 @@
+
+.container {    
+        width:1010px;font-size:30px;
+        height:740px;margin:20px auto;
+}
+#big img{
+    width:1010px;   
+    height:550px;
+    border:2px solid dodgerblue;
+}
+#sub img{
+    float:left;
+    width:198px;
+    height:160px;
+    border:2px solid black;
+}
+.container .top-left {
+    position: absolute;
+    top: 60px;
+    right: 200px;
+    font-size: 24px;
+    font-family: "Khmer OS Battambang"
+  }

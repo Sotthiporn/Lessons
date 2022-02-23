@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btnHide").mouseenter(function(){     //mouseenter = mouse hover
+		$("p").hide(1000);
+	});
+	$("#btnShow").click(function(){
+		$("p").show(1000);
+	});
+	$("#btnSlide").dblclick(function(){
+		$("p").slideToggle();     //slideToggle = show and hide
+	});
+
+});
+</script>
+</head>
+<body>
+<h2>JQuery Demo</h2>
+<p>This is a p1.</p>
+<p>This is p2.</p>
+<button id="btnHide">Hide all p</button>
+<button id="btnShow">Show all p</button>
+<h1 id="btnSlide">Show/Hide all p</h1>
+</body>
+</html>

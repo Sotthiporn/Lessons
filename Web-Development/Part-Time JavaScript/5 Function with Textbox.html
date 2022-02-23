@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script>
+	
+	function sum(a,b)
+{
+	document.getElementById("sum").innerHTML= a + b;
+}
+</script>
+<body>
+<h2> Head Script</h2>
+<p id="sum"></p>
+<input type="number" id="txtA" autofocus/>
+<input type="number" id="txtB"/>
+<button type="button" onclick="
+		sum(
+			Number(document.getElementById('txtA').value),
+			Number(document.getElementById('txtB').value)
+			)"> Sum</button>
+<button type="button" onclick="
+			document.getElementById('txtA').value='',
+			document.getElementById('txtB').value=''
+			document.getElementById('txtA').focus()"> Clear </button>
+			
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btnHideAll").click(function(){
+		$("p").hide();
+	});
+	$("#btnHide_By_P").click(function(){
+		$("#demo").hide();
+	});
+	$("#btnShowAll").click(function(){
+		$("p").show();
+	});
+	$("#btnShow_By_P").click(function(){
+		$(".show").show();
+	});
+
+});
+</script>
+</head>
+<body>
+<h2>JQuery Demo</h2>
+<p>This is a p1.</p>
+<p>This is p2.</p>
+<p id="demo" class="show">This is another paragraph.</p>
+<button id="btnHideAll">Hide All P</button>
+<button id="btnHide_By_P">Hide P by ID</button>
+<button id="btnShowAll">Show All P</button>
+<button id="btnShow_By_P">Show P by Class</button>
+</body>
+</html>

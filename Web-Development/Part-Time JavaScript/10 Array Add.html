@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+var cars= [];
+var i=0;
+function AddArr() 
+{
+	cars[i]=document.getElementById("txtArr").value;
+	document.getElementById("txtArr").value="";
+	document.getElementById("txtArr").focus();
+	i++;
+}
+function DisplayArr()
+{
+	var len = cars.length;
+	var text = "";
+	for (i=0; i< len;i++){
+		text +=cars[i] + "<br>";
+	}
+	document.getElementById("demo").innerHTML = text;
+}
+</script>
+<input type="Text" id="txtArr" autofocus/>
+<button type="button" onclick="AddArr()">Add</button>
+<button type="button" onclick="DisplayArr()">Display</button>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<script>
+	function myCombo(){
+		document.getElementById("mySelect").selectedIndex = "2";
+		getValue();
+	}
+	function getValue(){
+		var ind=document.getElementById("mySelect");
+		//ind.options[ind.selectedIndex].value
+		document.getElementById("display").innerHTML=ind.value;
+	}
+	function AddValue () {
+    	var cbo = document.getElementById("mySelect");
+        var option = document.createElement('option');
+        option.text = document.getElementById("txtValue").value;
+        cbo.add(option);
+        document.getElementById("txtValue").value="";
+        document.getElementById("txtValue").focus();
+    }
+    function Remove(){
+    	var ind = document.getElementById("mySelect");
+  		ind.remove(ind.selectedIndex);
+    }
+    function RemoveAll(){
+    	var ind = document.getElementById("mySelect");
+		ind.options.length = 0;
+    }    
+</script>
+<body>
+	<input type="text" id="txtValue">
+	<button onclick="AddValue()"> Add</button>
+	<button onclick="Remove()"> Remove</button>
+	<button onclick="RemoveAll()"> Remove All</button>
+	<button onclick="myCombo()"> Change Index</button>
+	<select id="mySelect" onchange="getValue()">
+	  <option>PHP</option>
+	  <option>JavaScript</option>
+	  <option>C#</option>
+	  <option>Database</option>
+	</select>
+	<h1 id="display"></h1>
+</body>
+</html>

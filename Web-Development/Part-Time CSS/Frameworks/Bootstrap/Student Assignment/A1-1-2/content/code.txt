@@ -1,0 +1,25 @@
+--------------------------------------------------------------------------------------
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "firefox",
+            "type": "process",
+            "command": "firefox.exe",
+            "windows": {"command": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"},
+            "args": ["${file}"],
+            "problemMatcher": []
+        }
+    ]
+}
+
+--------------------------------------------------------------------------------------
+
+[
+   {
+      "key": "ctrl+b",
+      "command": "workbench.action.tasks.runTask",
+      "args": "firefox"
+  }
+]

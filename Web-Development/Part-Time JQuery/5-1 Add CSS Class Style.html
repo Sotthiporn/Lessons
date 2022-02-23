@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("h1, h2").addClass("blue");
+    $("div,p").addClass("resize");
+  });
+  $("#btn2").click(function(){
+    $("h1, h2").addClass("blue");
+    $("div,p").addClass("resize blue");
+  });
+  $("#btn3").click(function(){
+    $("h1, h2").removeClass("blue");
+    $("div,p").removeClass("resize blue");
+  });  
+  $("#btn4").click(function(){
+    $("h1, h2").toggleClass("blue");
+    $("div,p").toggleClass("resize");
+  });   
+});
+</script>
+<style>
+.resize {
+  font-weight: bold;
+  font-size: xx-large;
+}
+.blue {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<h1>Hello h1</h1>
+<h2>Hello h2</h2>
+
+<p>This is a p.</p>
+<p>This is another p.</p>
+
+<div>Look at some changing by clicking button below!</div><br>
+
+<button id="btn1">Add CSS Style</button>
+<button id="btn2">Add CSS Style with multiple class</button>
+<button id="btn3">Remove CSS Style</button>
+<button id="btn4">Toggle CSS Style</button>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+function DisplayArr()
+{
+	var cars = ["BMW","Volvo","Camary","Ford","Honda"];
+	var text = "";
+	for(i=0; i<cars.length;i++){
+		text +=cars[i] + "<br>";
+	}
+	document.getElementById("demo").innerHTML = text;
+}
+</script>
+<button type="button" onclick="DisplayArr()">Click Here</button>
+</body>
+</html>

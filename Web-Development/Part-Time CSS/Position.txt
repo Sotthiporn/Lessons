@@ -1,0 +1,7 @@
++ Static - this is the default value, all elements are in order as they appear
+in the document.
++ Relative - the element is positioned relative to its normal position.
++ Absolute - the element is positioned absoluty to its first positioned
+parent.
++ Fixed - the element is positioned related to browser window.
++ Sticky - the element is positioned based on the user's scroll position.
