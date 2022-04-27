@@ -15,6 +15,7 @@ const items = [
 
 //ROUTES
 app.post("/api/items", (req, res) => {
+  //Validation
   if (!req.body.item || req.body.item.length < 2) {
     res.status(422).send("Sorry, item name must be at least 2 characters");
     return;
